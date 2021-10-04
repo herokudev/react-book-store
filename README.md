@@ -1,75 +1,69 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# React Book Store
 
-> One paragraph statement about the project.
+> React Book Store is a project for learning core concepts of React/Redux, listing books and also doing requests for deleting adding and updating books. 
 
-![screenshot](./app_screenshot.png)
+Basic UI of the project:
 
-Additional description about the project and its features.
+![screenshot](app_screenshot);
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo
-
-[Live Demo Link](https://livedemo.com)
-
+- React
+- Redux
+- Js
 
 ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
+- Git/GitHub;
+- Optional ( IDE installed in your machine ) - recommended IDE: Vscode;
+- Node or Yarn installed locally;
+
 ### Setup
+
+- To clone this repo:
+  - Open the Terminal(Mac/Linux) or the Cmd (Windows);
+  - Navigate to where you want to paste the Repo folder;
+  - Type `git clone https://github.com/herokudev/react-book-store.git`;
+  - Open the folder todo-list that was created on your IDE;
 
 ### Install
 
-### Usage
-
+- To install all the dependencies in the package.json:
+  - Open the Terminal(Mac/Linux) or the Cmd (Windows);
+  - Navigate to be inside the todo-list repo folder;
+  - Run npm install or npm i or yarn install;
+  
 ### Run tests
 
-### Deployment
-
-
+- Linters Tests:
+  - Eslint: run `npx eslint .`
+  - Stylelint: run `npx stylelint "**/*.{css,scss}"`
+- Run a Live Version of the Dist Folder:
+  - Run `npm start or yarn start`
 
 ## Authors
-
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+​
+👨‍💻 **Herbert Orellana**
+​
+- GitHub: [@herokudev](https://github.com/herokudev)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/herbert-armando-orellana-a0b50b34/)
+​
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
-
 ## Show your support
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+## Acknowledges
 
 ## 📝 License
 
