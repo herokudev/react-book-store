@@ -1,14 +1,13 @@
-/* eslint-disable camelcase */
 import { PropTypes } from 'prop-types';
 import BookInfo from './BookInfo';
 import ChapterProgress from './ChapterProgress';
 import ChapterUpdateProgress from './ChapterUpdateProgress';
 
 const BookItem = (props) => {
-  const { category, item_id, title } = props;
+  const { categories, id, title } = props;
   return (
     <div className="bookItemcontainer">
-      <BookInfo category={category} item_id={item_id} title={title} />
+      <BookInfo categories={categories} id={id} title={title} />
       <ChapterProgress />
       <ChapterUpdateProgress />
     </div>
@@ -16,9 +15,9 @@ const BookItem = (props) => {
 };
 
 BookItem.propTypes = {
-  category: PropTypes.string.isRequired,
+  categories: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  item_id: PropTypes.string.isRequired,
+  id: PropTypes.number.isRequired,
 };
 
 export default BookItem;
