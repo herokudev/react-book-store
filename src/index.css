@@ -1,27 +1,265 @@
-body {
-  margin: 0;
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    'Roboto',
-    'Oxygen',
-    'Ubuntu',
-    'Cantarell',
-    'Fira Sans',
-    'Droid Sans',
-    'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+
+:root {
+  --font-color1: #121212;
+  --font-color2: #4386bf;
+  --font-color3: #0290ff;
+  --font-color4: #c4c4c4;
+  --font-color5: #fff;
+  --background-color1: #f5f6fa;
+  --background-color2: #fff;
+  --border-color1: #e8e8e8;
 }
 
-code {
-  font-family:
-    source-code-pro,
-    Menlo,
-    Monaco,
-    Consolas,
-    'Courier New',
-    monospace;
+* {
+  box-sizing: border-box;
+  border: 0;
+  margin: 0;
+}
+
+html,
+body {
+  background-color: var(--background-color1);
+}
+
+.fontStyle1,
+.fontStyle2,
+.fontStyle3,
+.fontStyle4 {
+  font-family: Roboto, sans-serif;
+}
+
+.fontStyle5,
+.fontStyle6,
+.fontStyle7,
+.fontStyle8,
+.fontStyle9,
+.fontStyle10 {
+  font-family: Montserrat, 'Times New Roman', Times, serif;
+}
+
+.fontStyle2,
+.fontStyle3,
+.fontStyle4 {
+  font-weight: 300;
+}
+
+.fontStyle4,
+.fontStyle5,
+.fontStyle10 {
+  opacity: 0.5;
+}
+
+.fontStyle2,
+.fontStyle5,
+.fontStyle7 {
+  font-size: 0.875rem;
+}
+
+.fontStyle3,
+.fontStyle9 {
+  font-size: 1rem;
+}
+
+.fontStyle4,
+.fontStyle5,
+.fontStyle6,
+.fontStyle7 {
+  text-decoration: none;
+}
+
+.fontStyle4 {
+  font-size: 0.813rem;
+}
+
+.fontStyle1,
+.fontStyle5,
+.fontStyle6 {
+  font-weight: 700;
+}
+
+.fontStyle1 {
+  font-size: 1.375rem;
+}
+
+.fontStyle6 {
+  font-size: 1.875rem;
+}
+
+.fontStyle8 {
+  font-size: 2rem;
+}
+
+.fontStyle10 {
+  font-size: 1.25rem;
+}
+
+.normal {
+  font-weight: 400;
+}
+
+.fontColor2 {
+  color: var(--font-color2);
+}
+
+.fontColor3 {
+  color: var(--font-color3);
+}
+
+.fontColor5 {
+  color: var(--font-color5);
+}
+
+.mr1 {
+  margin-right: 1rem;
+}
+
+.mr2 {
+  margin-right: 2rem;
+}
+
+.ml1 {
+  margin-left: 1rem;
+}
+
+.ml2 {
+  margin-left: 2rem;
+}
+
+.mb05 {
+  margin-bottom: 0.5rem;
+}
+
+.mb1 {
+  margin-bottom: 1rem;
+}
+
+.appDefaultButton,
+.addBookTitle,
+.addBookGenre {
+  padding: 0.5rem 1rem;
+}
+
+.appDefaultButton {
+  background-color: var(--font-color3);
+  border-radius: 3px;
+}
+
+.appDefaultButton:hover {
+  background-color: var(--font-color2);
+}
+
+.booksContainer,
+.chapterProgressContainer,
+.categoriesPageContainer {
+  justify-content: center;
+}
+
+.booksContainer,
+.bookItemcontainer,
+.chapterProgressContainer,
+.addBookContainer,
+.formContainer,
+.categoriesPageContainer {
+  display: flex;
+}
+
+.booksContainer,
+.formContainer,
+.categoriesPageContainer {
+  width: 100%;
+}
+
+.booksContainer,
+.addBookContainer {
+  flex-direction: column;
+}
+
+.booksContainer,
+.categoriesPageContainer {
+  align-items: center;
+}
+
+.booksContainer {
+  margin-top: 2.5rem;
+}
+
+.bookItemcontainer,
+.addBookContainer {
+  width: 80%;
+}
+
+.bookItemcontainer {
+  justify-content: space-around;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+.addBookContainer {
+  align-items: flex-start;
+  border-top: 2px solid var(--border-color1);
+  margin: auto;
+  padding: 2rem 0;
+}
+
+.formContainer {
+  justify-content: space-between;
+}
+
+.addBookTitle,
+.addBookGenre {
+  border-radius: 4px;
+  border: solid 1px var(--border-color1);
+}
+
+.addBookTitle {
+  min-width: 45%;
+}
+
+.addBookGenre {
+  min-width: 35%;
+}
+
+.addBookBtn {
+  min-width: 15%;
+}
+
+.categoriesPageContainer {
+  height: 50vh;
+  text-align: center;
+}
+
+.percentageCircleContainer,
+.percentageCircle > circle {
+  width: 100px;
+  height: 100px;
+}
+
+.percentageCircleContainer {
+  position: relative;
+  margin-right: 0.8rem;
+}
+
+.percentageCircle > circle {
+  fill: none;
+  stroke-width: 5px;
+  stroke: #000;
+  transform: translate(10px, 10px);
+}
+
+circle.circle1 {
+  stroke: var(--border-color1);
+  stroke-dashoffset: 0;
+}
+
+.fontColor1,
+.appDefaultButton:active {
+  color: var(--font-color1);
+}
+
+.fontColor4,
+.addBookTitle::placeholder {
+  color: var(--font-color4);
 }
