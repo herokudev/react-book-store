@@ -4,9 +4,11 @@
 
 > React Book Store is a project for learning core concepts of React/Redux, listing books and also doing requests for deleting adding and updating books. 
 
-Screenshot UI of the project:
+A screenshot of the Books page is presented below:
 
-![screenshot](./app_screenshot);
+<p align="center">
+    <img alt="Home Page" style="border: 1px solid black;" src="./app_screenshot.png" width="700">
+</p>
 
 ## Built With
 
